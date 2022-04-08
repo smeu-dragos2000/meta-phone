@@ -1,0 +1,20 @@
+.d-flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    border: 1px solid red;
+}
+
+ 
+.tech-section-1 {
+    background-image: url("Images/Technology-1.png");
+    /* background-position:  right;
+    background-size:  cover; */
+}
+.tech-section-3 {
+    background-image: url("Images/Technology-3.png");
+    /* background-position:  center;
+    background-size:  cover; */
+}

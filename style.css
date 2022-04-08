@@ -5,96 +5,48 @@
 /* font-family: 'Source Sans Pro', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
+/* --- General --- */
+
+.container {
+    border: 1px solid red;
+}
+
+section {
+    position: relative;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
     font-family: 'Source Sans Pro', sans-serif;
+    transition: all 200ms linear;
 }
 
 html {
     scroll-behavior: smooth;
-  }
-
-/* Colors */
-.meta-blue {
-    color: #56CCF2;
+    height: 100%;
 }
 
-.white {
-    color: white;
+body {
+    height: 100%;
 }
 
-
-
-
-section {
-    position: relative;
-    padding: 3rem 0;
-    height: 100vh;
-}
-
-
-
-
-header {
-    font-family: 'Mulish', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-#logo img {
-    width: 100px;
-    transition: all 200ms linear;
-}
-#logo img:hover {
-    transform: scale(1.05);
-}
-
-
-.video {
+img {
     width: 100%;
-}
-
-h3 {
-    margin: 1rem auto;
-    font-weight: 700;
-}
-
-.section-2 {
-    background-image: url("Images/Frame-2.png");
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    min-height: 80rem;
-}
-.column {
-    width: 50%;
-}
-
-.column img {
-    width: 100%;
-}
-
-.column h1 {
-    line-height: 4rem;
-    font-size: 5rem;
-    font-weight: 900;
-}
-.column ul {
-    margin: 5rem 0;
-    margin-left: 5px;
-    list-style-image: url("Images/UL-bullet.png");
-    font-size: 1.8rem;
-    font-weight: 700;
+    overflow: hidden;
 }
 
 
+/* Buttons */
 button {
-    margin-top: 2rem;
-    padding: 1rem 4rem;
+    width: 350px !important;
+    /* margin-top: 1.8rem; */
+    padding: 1rem 2rem;
     border-radius: 3rem;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 700;
     transition: all 200ms linear;
 }
@@ -110,17 +62,20 @@ button:hover {
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(170deg, #78e4ff, black);
     background-origin: border-box;
     background-clip: content-box, border-box;
-    box-shadow: 2px 1000px 1px #fff inset;
+    box-shadow: 2px 1000px 1px #F6FAFD inset;
+}
+.button-blue-full {
+    border: solid 5px #78e4ff;
+    background-color: #78e4ff;
 }
 
 .button-brown {
     border: solid 5px #CA9682;
-    background-color: transparent;
+    background-color: #ca968254;
     color: white;
 }
 .button-brown:hover {
     background-color: #CA9682;
-
 }
 
 .button-brown-full {
@@ -128,47 +83,92 @@ button:hover {
     background-color: #CA9682;
 }
 
-.title-center {
-    text-align: center;
+/* Control vertical-alighn */
+.d-flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Colors --- */
+.meta-blue {
+    color: #56CCF2;
+}
+
+.white {
+    color: white;
+}
+
+/* TEXT SIZE */
+
+.text-XXL {
+    font-size: 4rem;
+}
+.text-XL {
+    font-size: 3rem;
+}
+.text-L {
+    font-size: 2.5rem;
+}
+.text-M {
+    font-size: 2rem;
+}
+
+/* TEXT WEIGHT */
+
+.bold-N {
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 600;
+}
+.bold-X {
     font-weight: 700;
 }
+.bold-XL {
+    font-weight: 800;
+}
 
 
+/* --- Header --- */
+
+header {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Logo */
+#logo img {
+    width: 100px;
+}
+#logo img:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* --- index.html --- */
+
+.section-2 {
+    background-image: url("Images/Frame-2a.png");
+}
 .section-3 {
     background-image: url("Images/Frame-3.png");
-    background-position: bottom center;
-    width: 100%;
+    background-position:  bottom;
 }
-
-.flex-brown {
-    position: absolute;
-    bottom: 5rem;
-    display: flex;
-    justify-content: space-around;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 .section-4 {
     background-image: url("Images/Frame-4.png");
-    background-position: bottom center;
-    width: 100%;
+    background-position:  bottom;
 }
-
 .section-5 {
     background-image: url("Images/Frame-5.png");
-    background-position: bottom center;
-    width: 100%;
+    background-position:  top;
 }
-
 .section-6 {
     background-image: url("Images/Frame-6.png");
-    background-position:  center;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: contain, cover;
+    background-position:  top;
 }
-
-.section-6 h1 {
-    font-size: 4rem;
+.section-6 {
+    background-color: #E5E5E5;
 }

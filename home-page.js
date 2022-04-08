@@ -6,7 +6,7 @@ const typedEffect = () => {
     if (i < text.length) {
         homePage1.innerHTML += text.charAt(i);
         i++;
-        setTimeout(typedEffect, 5);
+        setTimeout(typedEffect, 10);
         console.log(homePage1.innerHTML);
     }
 }
