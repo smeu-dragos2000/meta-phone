@@ -226,3 +226,17 @@ header {
 /* .container {
     border: 1px solid red;
 } */
+
+
+
+
+@media screen and (max-width: 991px) {
+    nav ul {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    nav ul li {
+        margin: auto !important;
+        padding: 0 !important;
+    }
+}
