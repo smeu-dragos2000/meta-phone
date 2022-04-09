@@ -7,13 +7,8 @@
 
 /* --- General --- */
 
-.container {
-    /* border: 1px solid red; */
-}
-
 section {
     position: relative;
-    /* min-height: 100%; */
     min-height: 400px;
     background-position: center;
     background-size: cover;
@@ -44,7 +39,6 @@ img {
 /* Buttons */
 button {
     width: 350px !important;
-    /* margin-top: 1.8rem; */
     padding: 1rem 2rem;
     border-radius: 3rem;
     font-size: 2.2rem;
@@ -87,6 +81,10 @@ button:hover {
     border: solid 5px #CA9682;
     background-color: #CA9682;
 }
+.button-pink-full {
+    border: solid 5px #F363C2;
+    background-color: #F363C2;
+}
 
 /* Control vertical-align */
 .d-flex-col {
@@ -97,6 +95,14 @@ button:hover {
 /* --- Colors --- */
 .meta-blue {
     color: #56CCF2;
+}
+
+.meta-pink {
+    color: #F5D2EE;
+}
+
+.meta-pink-Figma {
+    color: #F363C2;
 }
 
 .white {
@@ -186,5 +192,37 @@ header {
     min-height: 900px;
 }
 .section-7 {
-    background-color: #E5E5E5;
+    background-color: #F6F9FD;
 }
+.section-8 {
+    background-color: #F6F9FD;
+}
+.section-9 {
+    background-color: #F6F9FD;
+}
+.section-10 {
+    background-color: #AFDEE4;
+}
+.section-11 {
+    background-color: #F6F9FD;
+}
+
+.section-10 img {
+    width: 100%;
+}
+
+.column-services {
+    background-color: #F5D2EE;
+}
+
+.column-services img {
+    width: 90%;
+    min-height: 200px;
+    max-height: 500px;
+    object-fit: cover;
+    margin: auto;
+}
+
+/* .container {
+    border: 1px solid red;
+} */
