@@ -8,12 +8,13 @@
 /* --- General --- */
 
 .container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 section {
     position: relative;
-    min-height: 100%;
+    /* min-height: 100%; */
+    min-height: 400px;
     background-position: center;
     background-size: cover;
 }
@@ -50,6 +51,10 @@ button {
     font-weight: 700;
     transition: all 200ms linear;
 }
+.navbar-toggler {
+    width: fit-content !important;
+}
+
 button:hover {
     box-shadow: none;
     color: white;
@@ -83,7 +88,7 @@ button:hover {
     background-color: #CA9682;
 }
 
-/* Control vertical-alighn */
+/* Control vertical-align */
 .d-flex-col {
     display: flex;
     flex-direction: column;
@@ -140,7 +145,7 @@ header {
 
 /* Logo */
 #logo img {
-    width: 100px;
+    width: 60px;
 }
 #logo img:hover {
     transform: scale(1.05);
@@ -149,6 +154,16 @@ header {
 
 
 /* --- index.html --- */
+
+#typing-effect-square {
+    height: 2rem;
+    width: 4rem;
+    margin-left: -3rem;
+}
+
+.section-1 {
+    min-height: 400px;
+}
 
 .section-2 {
     background-image: url("Images/Frame-2a.png");
@@ -168,7 +183,8 @@ header {
 .section-6 {
     background-image: url("Images/Frame-6.png");
     background-position:  top;
+    min-height: 900px;
 }
-.section-6 {
+.section-7 {
     background-color: #E5E5E5;
 }
