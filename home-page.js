@@ -11,7 +11,7 @@ const typedEffect = () => {
         homePage1.innerHTML += text.charAt(i);
         i++;
         typingEffectSquare.style.display = "inline";
-        setTimeout(typedEffect, 5);
+        setTimeout(typedEffect, 10);
     }
     else {
         typingEffectSquare.style.display = "none";
