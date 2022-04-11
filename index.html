@@ -10,15 +10,16 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Scroll Animations -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- Style CSS -->
+    <!-- Styles CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <!-- JS link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script defer src="home-page.js"></script>
     <title>Meta Phone</title>
 </head>
-<body>
 
+<body>
   <!-- Header -->
   <header>
       <nav class="navbar navbar-expand-lg navbar-light my-navbar">
@@ -258,13 +259,35 @@
 
   <footer>
     <section class="section-11">
-      <div class="container">
-        <div class="row pt-5  pb-5">
+      <div class="container pt-5  pb-5">
+        <div class="row">
           <h1 class="text-center text-XL bold-XL meta-pink-Figma">We make the world smarter throught the aid of Edge Computing</h1>
         </div>
-        <div class="row pt-5 pb-5">
+        <div class="row mt-5">
           <div class="col-md-6">
-            <h6>Streaming and Video platform</h6>
+            <div class="row">
+              <div class="col d-flex-col align-items-center">
+                <a class="navbar-brand mb-5" id="logo" href="index.html">
+                  <img src="Images/Logo-meta.png" alt="">
+                </a>
+                <h6 class="mb-5">Streaming and Video platform</h6>
+                <div class="row d-flex">
+                  <a class="col social-media" href="https://www.instagram.com/">
+                    <img src="Images/Social-instagram.png" alt="">
+                  </a>
+                  <a class="col social-media" href="https://www.facebook.com/">
+                    <img src="Images/Social-facebook.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="col d-flex-col align-items-center">
+                <h6 class="mb-5">Contact info</h6>
+                <p class="mb-4">2715 Ash Dr. San Jose, South Dakota 83475</p>
+                <p class="mb-4">(219) 555-0114</p>
+                <p class="">info@screeno.com</p>
+              </div>
+            </div>
+            
           </div>
           <div class="col-md-6">
             <!-- Form-Contact -->
@@ -283,17 +306,17 @@
                 <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
               </div>
-              <div class="mb-3 form-check">
-                <text type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-              </div>
-              <button type="submit" class=" button-pink-full white">Submit</button>
+              <button type="submit" class=" button-pink-full white mt-3">Submit</button>
             </form>
             <!-- Form End -->
           </div>
         </div>
       </div>
     </section>
+    <hr class="break-line-gradient">
+    <div class="copyright pt-3 pb-2">
+      <p class="text-center">©2022 Screeno Ltd, All rights reserved</p>
+    </div>
   </footer>
 
 
