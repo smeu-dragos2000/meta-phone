@@ -20,9 +20,22 @@ const typedEffect = () => {
 window.onload = typedEffect();
 
 
-// ___________________
 
-let section3 = $('.section-3').offset().top;
+//  Initialize Swiper (Slider for Blog)
 
-// ___________________
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 5,
+    spaceBetween: 20,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 
