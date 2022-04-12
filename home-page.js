@@ -22,7 +22,14 @@ window.onload = typedEffect();
 
 // ___________________
 
-let section3 = $('.section-3').offset().top;
+const myButton = document.getElementById("section2-preOrder");
+const popUpMsg = document.getElementById("section2-popUp");
+
+const showPopUp = () => {
+    popUpMsg.style.display = popUpMsg.style.display === "block" ? "none" : "block";
+    
+}
+myButton.addEventListener('click', showPopUp) 
 
 // ___________________
 
