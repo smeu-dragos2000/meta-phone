@@ -55,20 +55,15 @@ button {
     justify-content: space-around;
     align-items: center;
 }
-
 button::before {
-    content: url(Images/Arrow-black1.png);
+    content: url(Images/Arrow-black.png);
     width: 20px;
     margin-right: 5px;
-
 }
 button:hover::before {
-    content: url(Images/Arrow-blue1.png);
+    content: url(Images/Arrow-blue.png);
     margin-right: 5px;
-
 }
-
-
 button:hover {
     color: #56CCF2;
 }
