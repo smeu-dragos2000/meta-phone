@@ -11,13 +11,13 @@ const typedEffect = () => {
         homePage1.innerHTML += text.charAt(i);
         i++;
         typingEffectSquare.style.display = "inline";
-        setTimeout(typedEffect, 10);
+        setTimeout(typedEffect, 12);
     }
     else {
         typingEffectSquare.style.display = "none";
     }
 }
-window.onload = typedEffect();
+window.onload = setTimeout(typedEffect, 100);
 
 
 // ___________________

@@ -9,7 +9,7 @@
 
 section {
     position: relative;
-    min-height: 400px;
+    min-height: 500px;
     background-position: center;
     background-size: cover;
 }
@@ -197,6 +197,7 @@ header {
     position: absolute;
     background-color: white;
     border-radius: 10px;
+    text-align: center;
     z-index: 1;
     width: 100%;
     padding: 20px;
@@ -211,7 +212,7 @@ header {
 
 
 @media screen and (max-width: 991px) {
-    /* TEXT SIZE */
+    /* TEXT RE-SIZE */
     .text-XXL {
         font-size: 3.6rem;
     }
@@ -237,7 +238,7 @@ header {
 }
 
 @media screen and (max-width: 991px) {
-    /* TEXT SIZE */
+    /* TEXT RE-SIZE */
     .text-XXL {
         font-size: 3.2rem;
     }

@@ -83,11 +83,16 @@
 <!-- ---------- Section 1 ---------- -->
   <section class="section-1">
       <div class="container">
-          <img class="video" src="Images/Frame-1.png" alt=""  data-aos="fade">
+          <!-- <img class="video" src="Images/Frame-1.png" alt=""  data-aos="fade"> -->
+          <video  autoplay loop>
+            <source src="Videos/Meta _1.mp4">
+          </video>
           <h3 class="mt-3 mb-3">
-            <span id="type-effect-1"></span>
+            <span id="type-effect-1" ></span>
             <!-- Text injected here -->
-            <span><img id="typing-effect-square" src="Images/typing-effect.png" alt=""></span>
+            <span  data-aos="fade" data-aos-delay="100">
+              <img id="typing-effect-square" src="Images/typing-effect.png" alt="">
+            </span>
           </h3>
       </div>
   </section>
@@ -98,7 +103,7 @@
           <div class="col-lg-6"  id="section-1-list">
             <h1 class="text-XXL bold-XL meta-blue" data-aos="fade-right">Meta</h1>
             <h1 class="text-XXL bold-XL meta-blue" data-aos="fade-right"  data-aos-delay="100">phone</h1>
-            <h1 class="bold-X" data-aos="fade-right"  data-aos-delay="100">The first SaaS cloud smarphone</h1>
+            <h1 class="bold-X" data-aos="fade-right"  data-aos-delay="100">The first SaaS cloud smartphone</h1>
             <ul class="text-M bold meta-blue"  >
               <li data-aos="fade-right" data-aos-delay="100">Data Management</li>
               <li data-aos="fade-right" data-aos-delay="200">Cutting-edge technology medium</li>
@@ -107,7 +112,7 @@
             </ul>
             <div class="btn-container">
               <div class="btn-popUp" id="section2-popUp">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elite.</p>
               </div>
               <button class="button-blue" id="section2-preOrder"  data-aos="fade-right">Pre-order</button>
             </div>
@@ -267,7 +272,7 @@
     <section class="section-11">
       <div class="container pt-5  pb-5">
         <div class="row">
-          <h1 class="text-center text-XL bold-XL meta-pink-Figma">We make the world smarter throught the aid of Edge Computing</h1>
+          <h1 class="text-center text-XL bold-XL meta-pink-Figma">We make the world smarter through the aid of Edge Computing</h1>
         </div>
         <div class="row mt-5">
           <div class="col-md-6">
@@ -297,22 +302,19 @@
           </div>
           <div class="col-md-6">
             <!-- Form-Contact -->
-            <form>
+            <form form action="mail_test.php" method="post">
               <h4>Get in touch</h4>
               <div class="mb-3">
-                <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your name">
+                <input type="text" class="form-control" name="name"  placeholder="Your name" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" name="email"  placeholder="Your Email" required>
                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
               </div>
               <div class="mb-3">
-                <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Your Email">
+                <textarea class="form-control" name="message"  rows="3" placeholder="Your message" required></textarea>
               </div>
-              <div class="mb-3">
-                <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
-              </div>
-              <button type="submit" class=" button-pink-full white mt-3">Submit</button>
+              <button type="submit" class=" button-pink-full white mt-3" name="submit">Submit</button>
             </form>
             <!-- Form End -->
           </div>
