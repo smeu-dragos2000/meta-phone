@@ -43,24 +43,38 @@ img {
 
 /* Buttons */
 button {
-    width: 300px !important;
-    padding: 1rem 2rem;
-    border-radius: 3rem;
-    font-size: 2.2rem;
-    font-weight: 700;
+    width: 260px !important;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: transparent;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 0;
     transition: all 200ms linear;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-.navbar-toggler {
-    width: fit-content !important;
+
+button::before {
+    content: url(Images/Arrow-black1.png);
+    width: 20px;
+    margin-right: 5px;
+
 }
+button:hover::before {
+    content: url(Images/Arrow-blue1.png);
+    margin-right: 5px;
+
+}
+
 
 button:hover {
-    box-shadow: none;
-    color: white;
+    color: #56CCF2;
 }
 
-.button-blue {
-    /* Gradient Border */
+/* .button-blue {
+
     box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
     border: solid 5px transparent;
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(170deg, #78e4ff, black);
@@ -89,7 +103,7 @@ button:hover {
 .button-pink-full {
     border: solid 5px #F363C2;
     background-color: #F363C2;
-}
+} */
 
 /* Control vertical-align */
 .d-flex-col {
