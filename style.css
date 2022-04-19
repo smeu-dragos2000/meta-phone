@@ -252,3 +252,8 @@ header {
         font-size: 1.4rem;
     }
 }
+
+
+video {
+    width: 100%;
+}
