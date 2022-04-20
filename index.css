@@ -1,6 +1,7 @@
 .section-1 {
     padding-top: 60px;
-    min-height: fit-content;
+    height: fit-content;
+    min-height: 100vh;
 }
 .section-2 {
     background-image: url("Images/Frame-2a.png");
@@ -34,7 +35,10 @@
 }
 .section-10 {
     background-color: #AFDEE4;
+    height: fit-content;
+    min-height: 100vh;
 }
+
 .section-11 {
     background-color: #F6F9FD;
 }
