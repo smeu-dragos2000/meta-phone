@@ -1,3 +1,4 @@
+// Typeing Effect
 let i = 0;
 let text = "MetaPhone is accelerating the world's transition to software driven cities with cloud phones, data management and performance SaaS integrated platform.";
 let textLength = text.length;
@@ -20,16 +21,17 @@ const typedEffect = () => {
 window.onload = setTimeout(typedEffect, 100);
 
 
-// ___________________
+// Video Mute/Unmute 
+const buttonVolume = document.getElementById("mute-button");
+const myVideo = document.getElementById("my-video");
+myVideo.muted = true;
 
-const myButton = document.getElementById("section2-preOrder");
-const popUpMsg = document.getElementById("section2-popUp");
-
-const showPopUp = () => {
-    popUpMsg.style.display = popUpMsg.style.display === "block" ? "none" : "block";
-    
+const changeVolume = () => {
+    myVideo.muted = !myVideo.muted;
+    console.log(myVideo.muted);
 }
-myButton.addEventListener('click', showPopUp) 
+buttonVolume.addEventListener("click", changeVolume);
 
-// ___________________
+
+
 

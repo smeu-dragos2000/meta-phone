@@ -9,7 +9,9 @@
 
 section {
     position: relative;
-    min-height: 500px;
+    width: 100%;
+    height: 100vh;
+
     background-position: center;
     background-size: cover;
 }
@@ -32,6 +34,7 @@ body {
 
 img {
     width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -39,6 +42,10 @@ img {
     height: 2rem;
     width: 4rem;
     margin-left: -3rem;
+}
+
+.navbar-toggler {
+    width: fit-content !important;
 }
 
 /* Buttons */
@@ -68,37 +75,6 @@ button:hover {
     color: #56CCF2;
 }
 
-/* .button-blue {
-
-    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
-    border: solid 5px transparent;
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(170deg, #78e4ff, black);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    box-shadow: 2px 1000px 1px #F6FAFD inset;
-}
-.button-blue-full {
-    border: solid 5px #78e4ff;
-    background-color: #78e4ff;
-}
-
-.button-brown {
-    border: solid 5px #CA9682;
-    background-color: #ca968254;
-    color: white;
-}
-.button-brown:hover {
-    background-color: #CA9682;
-}
-
-.button-brown-full {
-    border: solid 5px #CA9682;
-    background-color: #CA9682;
-}
-.button-pink-full {
-    border: solid 5px #F363C2;
-    background-color: #F363C2;
-} */
 
 /* Control vertical-align */
 .d-flex-col {
@@ -126,32 +102,32 @@ button:hover {
 /* TEXT SIZE */
 
 .text-XXL {
-    font-size: 4rem;
+    font-size: 3.4rem;
 }
 .text-XL {
-    font-size: 3rem;
+    font-size: 2.6rem;
 }
 .text-L {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 .text-M {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 /* TEXT WEIGHT */
 
 .bold-N {
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .bold {
-    font-weight: 600;
+    font-weight: 500;
 }
 .bold-X {
-    font-weight: 700;
+    font-weight: 600;
 }
 .bold-XL {
-    font-weight: 800;
+    font-weight: 700;
 }
 
 
@@ -161,7 +137,25 @@ header {
     font-family: 'Mulish', sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
+    width: 100%;
 }
+.my-navbar {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+    z-index: 10;
+    background-color: rgba(255, 255, 255);
+}
+.my-navbar .container {
+    background-color: rgba(255, 255, 255);
+}
+header button::before,
+header button:hover::before  {
+    content:none
+}
+
 
 /* Logo */
 #logo img {
@@ -169,6 +163,22 @@ header {
 }
 #logo img:hover {
     transform: scale(1.05);
+}
+
+/* Video Container for Mute/Unmute button */
+.container-video {
+    position: relative;
+}
+#mute-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    /* transform: translate(-50%, -50%); */
+    z-index: 11;
+    width: 10%;
+    min-width: 50px;
+    cursor: pointer;
+    border: 1px solid red;
 }
 
 
@@ -196,43 +206,22 @@ header {
 }
 
 
-/* Button PopUp */
-.btn-container {
-    position: relative;
-    width: fit-content;
-
-}
-.btn-popUp {
-    position: absolute;
-    background-color: white;
-    border-radius: 10px;
-    text-align: center;
-    z-index: 1;
-    width: 100%;
-    padding: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 120%;
-    box-shadow: 1px 1px 8px gray;
-    display: none;
-}
-
 
 
 
 @media screen and (max-width: 991px) {
     /* TEXT RE-SIZE */
     .text-XXL {
-        font-size: 3.6rem;
+        font-size: 3.2rem;
     }
     .text-XL {
-        font-size: 2.6rem;
+        font-size: 2.5rem;
     }
     .text-L {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
     .text-M {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 
 
@@ -249,20 +238,31 @@ header {
 @media screen and (max-width: 991px) {
     /* TEXT RE-SIZE */
     .text-XXL {
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
     .text-XL {
-        font-size: 2.2rem;
-    }
-    .text-L {
         font-size: 2rem;
     }
+    .text-L {
+        font-size: 1.6rem;
+    }
     .text-M {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 }
+
 
 
 video {
     width: 100%;
+    height: 100%;
 }
+
+
+/* .container {
+    border: 1px solid red;
+}
+
+.row {
+    border: 1px solid blue;
+} */
