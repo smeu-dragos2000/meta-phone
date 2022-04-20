@@ -24,11 +24,23 @@ window.onload = setTimeout(typedEffect, 100);
 // Video Mute/Unmute 
 const buttonVolume = document.getElementById("mute-button");
 const myVideo = document.getElementById("my-video");
+const volumeOff = document.getElementById("volume-Off");
+const volumeOn = document.getElementById("volume-On");
+
+volumeOff.style.display = "none";
+volumeOn.style.display = "block";
 myVideo.muted = true;
 
 const changeVolume = () => {
     myVideo.muted = !myVideo.muted;
-    console.log(myVideo.muted);
+    if(volumeOff.style.display === "none" & volumeOn.style.display === "block") {
+        volumeOff.style.display = "block";
+        volumeOn.style.display = "none";
+    }
+    else {
+        volumeOff.style.display = "none";
+        volumeOn.style.display = "block";
+    }
 }
 buttonVolume.addEventListener("click", changeVolume);
 
