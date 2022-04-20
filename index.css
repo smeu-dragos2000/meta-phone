@@ -8,13 +8,13 @@
     height: 100%;
 }
 .section-3 {
-    background-image: url("Images/Frame-3.png");
+    background-image: url("Images/Frame-3b.png");
 }
 .section-4 {
     background-image: url("Images/Frame-4b.png");
 }
 .section-5 {
-    background-image: url("Images/Frame-5.png");
+    background-image: url("Images/Frame-5b.png");
 }
 .section-6 {
     background-image: url("Images/Frame-6.png");
@@ -36,7 +36,7 @@
     min-height: 100vh;
 }
 
-.section-11 {
+footer {
     background-color: #F6F9FD;
 }
 
