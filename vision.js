@@ -47,6 +47,7 @@ buttonVolume.addEventListener("click", changeVolume);
 
 // ----- Initialize Swiper (Slider for Blog)
 
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 20,
