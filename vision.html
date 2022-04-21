@@ -84,9 +84,8 @@
       <!--  Video  -->
       <div class="container-video">
         <video id="my-video"  autoplay muted="true" loop  playsinline>
-          <source src="Videos/Meta _vison.mp4">
-          <!-- <source src="Videos/Meta _1-mobile.mp4"> -->
-
+          <source src="Videos/Video-vison.mp4">
+          <source src="Videos/Video-vison.webm">
         </video>
         <div id="mute-button">
           <img  id="volume-Off" src="Images/Volume-Off.png" alt="" data-aos="fade" data-aos-delay="600">
@@ -146,13 +145,13 @@
 <!-- ---------- Section-Vision 4 ---------- -->
 <section class="vision-section-4"  data-aos="fade">
     <div class="container pt-5 pb-5  d-flex-col justify-content-between">
-      <div class="row" >
+      <div class="row h-100" >
         <h1 class="text-center text-XL bold-X"  data-aos="fade-up">Blog</h1>
         <h3 class="text-center"  data-aos="fade-up">At the end of the day have fun with celebrities</h3>
       </div>
       <!--  Blog - Carousel  -->
-      <div class="row"  data-aos="fade-down">
-        <div class="swiper mySwiper mt-5 mb-5">
+      <div class="row h-100"  data-aos="fade-down">
+        <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="Images/Blog-1.png" alt=""></div>
             <div class="swiper-slide"><img src="Images/Blog-2.png" alt=""></div>
@@ -214,14 +213,14 @@
 
 <!-- ----- Footer ------ -->
 <footer>
-  <section class="section-11"  data-aos="fade">
-    <div class="container pt-5  pb-5 h-100 d-flex-col justify-content-around">
+  <section class="section-footer"  data-aos="fade">
+    <div class="container pt-5  pb-5 d-flex-col justify-content-around">
       <div class="row"  data-aos="fade-up">
-        <h1 class="text-center text-XL bold-XL meta-pink-Figma">We make the world smarter through the aid of Edge Computing</h1>
+        <h1 class="text-center mb-3 text-XL bold-XL meta-pink-Figma">We make the world smarter through the aid of Edge Computing</h1>
       </div>
       <div class="row">
-        <div class="col-md-6"  data-aos="fade-right">
-          <div class="row">
+        <div class="col-md-6 mb-3"  data-aos="fade-right">
+          <div class="row ">
             <div class="col mb-3 d-flex-col align-items-center">
               <a class="navbar-brand mb-5" id="logo" href="index.html">
                 <img src="Images/Logo-meta.png" alt="">
@@ -245,7 +244,7 @@
           </div>
           
         </div>
-        <div class="col-md-6"  data-aos="fade-left">
+        <div class="col-md-6 "  data-aos="fade-left">
           <!-- Form-Contact -->
           <form form action="mail_test.php" method="post">
             <h4>Get in touch</h4>
@@ -256,7 +255,7 @@
               <input type="email" class="form-control" name="email"  placeholder="Your Email" required>
               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
-            <div class="mb-3">
+            <div class="">
               <textarea class="form-control" name="message"  rows="3" placeholder="Your message" required></textarea>
             </div>
             <button type="submit" class=" " name="submit">Submit</button>
@@ -272,6 +271,7 @@
   </div>
 </footer>
 
+
   <!-- Scroll Animations -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -281,6 +281,5 @@
       });
     </script>
   <!-- --------------------- -->
-
 </body>
 </html>

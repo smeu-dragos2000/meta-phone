@@ -1,14 +1,16 @@
 .section-1 {
-    padding-top: 60px;
+    padding-top: 10px;
     height: fit-content;
     min-height: 100vh;
 }
 .section-2 {
-    background-image: url("Images/Frame-2b.png");
-    height: 100%;
+    background-image: url("Images/Frame-2.png");
+    height: fit-content;
+    min-height: 100vh;
 }
 .section-3 {
-    background-image: url("Images/Frame-3b.png");
+    background-image: url("Images/Frame-3.png");
+    height: 100vh;
 }
 .section-4 {
     background-image: url("Images/Frame-4b.png");
@@ -31,31 +33,30 @@
     background-color: #F6F9FD;
 }
 .section-10 {
-    background-color: #AFDEE4;
+    background-image: linear-gradient(#c9f1eb, #96c0ba);
     height: fit-content;
     min-height: 100vh;
 }
 
-footer {
-    background-color: #F6F9FD;
-}
 
 
-
-.column-services {
-    background-color: #F5D2EE;
-}
 
 .section-2 ul {
     list-style-image: url('Images/UL-bullet.png');
 }
 
+
+
+/* .column-services {
+    background-color: #F5D2EE;
+} */
+
 .column-services img {
-    width: 90%;
-    min-height: min-content;
-    max-height: max-content;
+    width: 100%;
+    /* min-height: min-content;
+    max-height: max-content; */
     object-fit: cover;
-    margin: auto;
+    /* margin: auto; */
 }
 
 #typing-effect {

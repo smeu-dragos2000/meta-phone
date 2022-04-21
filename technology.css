@@ -1,8 +1,10 @@
 
 .tech-section-1 {
+    padding-top: 10px;
     background-image: url("Images/Technology-1.png");
 }
 .tech-section-2 {
+    background-color: #FFFFFF;
     height: fit-content;
     min-height: 100vh;
 }
