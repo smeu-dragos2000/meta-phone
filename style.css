@@ -20,7 +20,7 @@ section {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
-    transition: all 200ms linear;
+    transition: all 150ms linear;
 }
 
 html {
@@ -44,9 +44,7 @@ img {
     margin-left: -3rem;
 }
 
-.navbar-toggler {
-    width: fit-content !important;
-}
+
 
 /* Buttons */
 button {
@@ -137,6 +135,9 @@ header {
     font-family: 'Mulish', sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
+    z-index: 10;
+    border: 1px solid pink;
+
 }
 .my-navbar {
     padding-top: 0;
@@ -146,12 +147,16 @@ header {
 }
 .my-navbar .nav-container {
     background-color: rgba(255, 255, 255);
+    position: relative;
 }
 header button::before,
 header button:hover::before  {
     content:none
 }
 
+.navbar-toggler {
+    width: fit-content !important;
+}
 
 /* Logo */
 #logo img {
@@ -160,6 +165,7 @@ header button:hover::before  {
 #logo img:hover {
     transform: scale(1.05);
 }
+
 
 /* Video Container for Mute/Unmute button */
 .container-video {
@@ -181,13 +187,14 @@ header button:hover::before  {
 footer {
     background-color: #FFFFFF;
     height: 100%;
-
+    width: 100%;
+    min-height: 800px;
 }
 
 .section-footer {
     background-color: #FFFFFF;
     height: 100%;
-    min-height: 500px
+    min-height: 700px;
 }
 
 .social-media {
@@ -208,7 +215,7 @@ footer {
 }
 
 .copyright {
-    background-color: #F6F9FD;
+    background-color: #FFFFFF;
 }
 
 
@@ -264,20 +271,44 @@ video {
 }
 
 .container-img {
+    position: relative;
     width: 100%;
+    height: 100%;
     padding: 0;
     overflow: hidden;
 }
 .container-img img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .container-img img:hover {
     transform: scale(1.05);
 }
 
+/* Scroll to top button */
+
+.scroll-to-top {
+    width: 60px !important;
+    height: 50px;
+    position: fixed;
+    border: 1px solid rgba(128, 128, 128, 0.493);
+    border-radius: 5px;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.scroll-to-top::before {
+    content: "";
+}
 
 
-.container {
+
+/* .container {
     border: 1px solid red;
 }
 
@@ -287,4 +318,4 @@ video {
 
 section {
     border: 1px dotted green;
-}
+} */

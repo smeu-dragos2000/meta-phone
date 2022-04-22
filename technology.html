@@ -22,11 +22,11 @@
 <body>
 <!-- Header -->
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light my-navbar">
+  <nav class="navbar navbar-expand-lg navbar-light my-navbar  fixed-top">
     <div class="container nav-container">
       <!-- Logo -->
       <a class="navbar-brand me-5" id="logo" href="index.html">
-        <img src="Images/Logo-meta.png" alt="">
+        <img src="Images/Logo.png" alt="">
       </a>
 
       <!-- Hamburger Menu -->
@@ -76,19 +76,23 @@
 
 <!-- ---------- Section-TEchnology 1 ---------- -->
   <section class="tech-section-1">
-      <div class="container pt-5 pb-5 h-100 d-flex-col justify-content-center">
-          <div class="row">
-              <div class="col-md">
-                  <h1 class="text-XXL bold-X white">A smart future backed by edge computing</h1>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-md-8">
-                  <h4 class="bold white">The first neo smartphone in Europe with integrated cloud-computing services. A 5G cloud mobile phone.</h4>
-              </div>
-              <div class="col-md"></div>
-          </div>
-      </div>
+
+    <video id="tech-video"  autoplay muted="true" loop  playsinline   >
+      <source src="Videos/Video-tehnology.webm" type='video/webm'>
+    </video>
+    <div class="container pt-5 pb-5 h-100 d-flex-col justify-content-center">
+        <div class="row">
+            <div class="col-md">
+                <h1 class="text-XXL bold-X white">A smart future backed by edge computing</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <h4 class="bold white">The first neo smartphone in Europe with integrated cloud-computing services. A 5G cloud mobile phone.</h4>
+            </div>
+            <div class="col-md"></div>
+        </div>
+    </div>
   </section>
 <!-- ---------- Section-TEchnology 2 ---------- -->
   <section class="tech-section-2"   data-aos="fade">
@@ -126,7 +130,7 @@
     <div class="container h-100 pt-5 pb-5">
         <div class="row h-100">
           <div class="col-md"></div>
-          <div class="col-md-6 d-flex-col justify-content-around" >
+          <div class="col-md-7 d-flex-col justify-content-around" >
               <h1 class="text-XL bold-X white"  data-aos="fade-left">Cnmeta computing network</h1>
               <h5 class="bold-N white"  data-aos="fade-left">Metaone smartphone, as a metachain node, holds a block ledger, which can store, verify and synchronize the generation, scheduling, transaction and consumption behavior of the shared computing power of the CNMETA computing power network, so as to obtain records. Account and verification rewards, this process we call mining;</h5>
               <button  data-aos="fade-left">Get Started</button>
@@ -154,20 +158,26 @@
       <div class="row text-center">
         <h1 class="text-XXL bold-X "   data-aos="fade-up">Miners Types</h1>
       </div>
-      <div class="row d-flex justify-content-between gap-4">
-        <div class="col-md">
-          <img src="Images/Technology-5-1.png" alt=""   data-aos="fade-right">
+      <div class="row d-flex justify-content-between gap-2">
+        <div class="col-sm">
+          <div class="container-img" data-aos="fade-right">
+            <div class="text-over  bold-XL white">POW</div>
+            <img src="Images/Technology-5-1.png" alt=""   >
+          </div>
         </div>
-        <div class="col-md">
-          <img src="Images/Technology-5-2.png" alt=""   data-aos="fade-left">
+        <div class="col-sm">
+          <div class="container-img" data-aos="fade-left">
+            <div class="text-over  bold-XL white">POS</div>
+            <img src="Images/Technology-5-2.png" alt=""   >
+          </div>
         </div>
       </div>
     </div>
   </section>
 <!-- ---------- Section-TEchnology 7 ---------- -->
   <section class="tech-section-7"  data-aos="fade">
-    <div class="container  pb-5 pt-5  d-flex-col justify-content-between">
-      <div class="row text-center">
+    <div class="container  pb-5 pt-5 h-50  d-flex-col justify-content-between">
+      <div class="row  text-center">
         <h1 class="text-XXL bold-X"  data-aos="fade-up">Start your own business today</h1>
         <h4   data-aos="fade-up">Consistent quality and experience across all platforms and devices.</h4>
       </div>
@@ -176,9 +186,9 @@
         <button class=""  data-aos="fade-left">Learn More</button>
       </div>
       <div class="row">
-        <div class="col-md-10 m-auto">
+        <!-- <div class="col-md-10 m-auto">
           <img src="Images/Technology-6.png" alt=""  data-aos="fade-right">
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -186,7 +196,7 @@
 <!-- ----- Footer ------ -->
 <footer>
   <section class="section-footer"  data-aos="fade">
-    <div class="container pt-5  pb-5 h-100 d-flex-col justify-content-around">
+    <div class="container pt-5 h-100  pb-5 d-flex-col justify-content-around">
       <div class="row"  data-aos="fade-up">
         <h1 class="text-center mb-3 text-XL bold-XL meta-pink-Figma">We make the world smarter through the aid of Edge Computing</h1>
       </div>
@@ -236,12 +246,17 @@
         </div>
       </div>
     </div>
+      <!-- Copyright -->
+    <hr class="break-line-gradient">
+    <div class="copyright pt-3 pb-2">
+      <p class="text-center">©2022 DAS-Design SRL</p>
+    </div>
   </section >
-  <hr class="break-line-gradient">
-  <div class="copyright pt-3 pb-2">
-    <p class="text-center">©2022 Screeno Ltd, All rights reserved</p>
-  </div>
+
 </footer>
+
+<div class="scroll-to-top"  onclick="window.scrollTo(0, 0);">Top</div>
+
 
 
   <!-- Scroll Animations -->
@@ -249,7 +264,7 @@
     <script>
       AOS.init({
         duration: 600,
-        once: false,
+        once: true,
       });
     </script>
   <!-- --------------------- -->

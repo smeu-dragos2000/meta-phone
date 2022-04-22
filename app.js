@@ -5,8 +5,6 @@ let textLength = text.length;
 const homePage1 = document.getElementById("type-effect-1");
 const typingEffectSquare = document.getElementById("typing-effect-square");
 
-
-console.log(typingEffectSquare.style.display)
 const typedEffect = () => {
     if (i < text.length) {
         homePage1.innerHTML += text.charAt(i);
@@ -44,5 +42,6 @@ const changeVolume = () => {
 }
 buttonVolume.addEventListener("click", changeVolume);
 
+// Scroll to top button
 
 

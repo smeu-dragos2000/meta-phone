@@ -1,7 +1,7 @@
 
 .tech-section-1 {
     padding-top: 10px;
-    background-image: url("Images/Technology-1.png");
+
 }
 .tech-section-2 {
     background-color: #FFFFFF;
@@ -10,12 +10,38 @@
 }
 .tech-section-3 {
     background-image: url("Images/Technology-3.png");
+    height: 100vh;
+    min-height: 400px;
 }
 .tech-section-4 {
     background-image: url("Images/Technology-4.png");
+    height: 100vh;
+    min-height: 500px;
+}
+.tech-section-6 {
+
+    height: 100vh;
+    min-height: 400px;
 }
 .tech-section-7 {
-    background-color: #F5D2EE;
-    height: fit-content;
+    background-image: url("Images/Technology-6.png");
     min-height: 100vh;
+}
+
+#tech-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.text-over {
+    position: absolute;
+    font-size: 4rem;
+    z-index: 5;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%);
 }

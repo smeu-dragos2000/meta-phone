@@ -23,8 +23,8 @@
 <body>
   <!-- Header -->
   <header>
-      <nav class="navbar navbar-expand-lg navbar-light my-navbar">
-        <div class="container nav-container">
+      <nav class="navbar navbar-expand-lg navbar-light my-navbar  fixed-top">
+        <div class="container ">
           <!-- Logo -->
           <a class="navbar-brand me-5" id="logo" href="index.html">
             <img src="Images/Logo.png" alt=""   >
@@ -81,11 +81,9 @@
         <!--  Video  -->
         <div class="container-video">
           <video id="my-video"  autoplay muted="true" loop  playsinline   >
-            <!-- <source src="Videos/Video-index.mp4" type='video/mp4'> -->
             <source src="Videos/Video-index.webm" type='video/webm'>
-            <img src="Videos/Video-index-IMG.png" title="Your browser does not support the video">
-
           </video>
+
           <div id="mute-button">
             <img  id="volume-Off" src="Images/Volume-Off.png" alt="" data-aos="fade" data-aos-delay="600">
             <img id="volume-On" src="Images/Volume-On.png" alt=""  data-aos="fade" data-aos-delay="600">
@@ -106,7 +104,7 @@
     <div class="container pt-5 pb-5 h-100">
       <div class="row h-100">
         <div class="col-lg-6 d-flex-col justify-content-center">
-          <h1 class="text-XXL bold-XL meta-blue m-0 p-0 " data-aos="fade-right">Meta phone</h1>
+          <h1 class="text-XXL bold-XL meta-blue m-0 p-0" data-aos="fade-right">Meta phone</h1>
             <h2 class="bold-X" data-aos="fade-right"  data-aos-delay="100">The first SaaS cloud smartphone</h2>
             <ul class="text-M bold meta-blue">
               <li data-aos="fade-right" >Data Management</li>
@@ -238,7 +236,7 @@
         <div class="container-img">
           <img class="text-center" src="Images/services-column1.png" alt="">
         </div>
-        <h3 class="text-center bold-X pt-3">STORAGE</h3>
+        <h4 class="text-center bold-X pt-3">STORAGE</h4>
         <!-- <h4 class="text-center pt-1">£xxxx</h4> -->
       </div>
 
@@ -246,7 +244,7 @@
         <div class="container-img">
           <img class="text-center" src="Images/services-column2.png" alt="">
         </div>
-        <h3 class="text-center bold-X pt-3">DATA MANAGEMENT</h3>
+        <h4 class="text-center bold-X pt-3">DATA MANAGEMENT</h4>
         <!-- <h4 class="text-center pt-1">£xxxx</h4> -->
       </div>
 
@@ -254,7 +252,7 @@
         <div class="container-img">
           <img class="text-center" src="Images/services-column3.png" alt="">
         </div>
-        <h3 class="text-center bold-X pt-3">CRYPTOCURENCY</h3>
+        <h4 class="text-center bold-X pt-3">CRYPTOCURENCY</h4>
         <!-- <h4 class="text-center pt-1">£xxxx</h4> -->
       </div>
     </div>
@@ -280,7 +278,7 @@
 <!-- ----- Footer ------ -->
 <footer>
   <section class="section-footer"  data-aos="fade">
-    <div class="container pt-5  pb-5 h-100 d-flex-col justify-content-around">
+    <div class="container pt-5 h-100  pb-5 d-flex-col justify-content-around">
       <div class="row"  data-aos="fade-up">
         <h1 class="text-center mb-3 text-XL bold-XL meta-pink-Figma">We make the world smarter through the aid of Edge Computing</h1>
       </div>
@@ -330,12 +328,18 @@
         </div>
       </div>
     </div>
+      <!-- Copyright -->
+    <hr class="break-line-gradient">
+    <div class="copyright pt-3 pb-2">
+      <p class="text-center">©2022 DAS-Design SRL</p>
+    </div>
   </section >
-  <hr class="break-line-gradient">
-  <div class="copyright pt-3 pb-2">
-    <p class="text-center">©2022 Screeno Ltd, All rights reserved</p>
-  </div>
+
 </footer>
+
+<div class="scroll-to-top"  onclick="window.scrollTo(0, 0);">Top</div>
+
+
 
 
   <!-- Scroll Animations -->
@@ -343,7 +347,7 @@
     <script>
       AOS.init({
         duration: 600,
-        once: false,
+        once: true,
       });
     </script>
   <!-- --------------------- -->
