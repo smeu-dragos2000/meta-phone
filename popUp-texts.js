@@ -100,4 +100,16 @@ export const indexPopUp = {
         "<p> Blockchain wallet, not only a mobile phone, but also a hardware wallet; </p>",
         "<p> Support 3G/4G/5G, dual card dual standby, high picture pixel </p>"
     ],
+    // Vison
+    vision_1 : [
+        "<p> Meta's closed-loop business logic: mateone users are both consumers and bookkeepers, plus the consensus person who provides liquidity for the token meta, and the home edge station that is the edge computing power provider. Several parties jointly participate in the establishment of a global edge cloud , to realize the business closed loop of computing power from generation, scheduling, transaction to consumption meta one cloud phone: </p>",
+        "<p> It is a 5G cloud mobile phone. This mobile phone has been upgraded on the cloud application, which can combine the terminal mobile phone and the cloud mobile phone into one, realizing the function of one mobile phone having two mobile phones; </p>"
+    ],
+    vision_2 : [
+        "<p> Meta one cloud mobile phone service can transfer all applications on the mobile phone to the cloud, and the computing and storage capabilities originally required by the mobile terminal are all provided by the cloud server; </p>",
+    ],
+    // Shop
+    shop_1 : [
+        "<p>  To order a phone you can join our waiting list. We will notify you via email when your order can be ready and the pricing dels. To secure you place, please pay a depositon on the links below. </p>"
+    ],
 }

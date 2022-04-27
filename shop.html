@@ -16,8 +16,8 @@
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <!-- Favicon -->
         <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
-        <script defer src="app.js"></script>
-        <title>Products</title>
+        <script defer type="module" src="shop.js"></script>
+        <title>Meta Shop</title>
     </head>
 
 
@@ -42,13 +42,13 @@
 
           <ul class="navbar-nav">
             <li class="nav-item ps-3">
-              <a class="nav-link" href="#meta-1.0">Meta 1.0</a>
+              <a class="nav-link" href="index.html#meta-1.0">Meta 1.0</a>
             </li>
             <li class="nav-item ps-3">
-              <a class="nav-link" href="#meta-1.2">Meta 1.2</a>
+              <a class="nav-link" href="index.html#meta-1.2">Meta 1.2</a>
             </li>
             <li class="nav-item ps-3">
-              <a class="nav-link" href="#meta-2.0">Meta 2.0</a>
+              <a class="nav-link" href="index.html#meta-2.0">Meta 2.0</a>
             </li>
           </ul>
 
@@ -83,24 +83,24 @@
         <div class="row text-center mb-3">
           <h1 class="text-XXL bold-X "   data-aos="fade-up">Products</h1>
         </div>
-        <div class="row d-flex justify-content-between gap-1 pb-3">
+        <div class="row d-flex justify-content-between gap-1 pb-3" id="shop-container">
 
           <div class="col-sm">
-            <div class="container-img" data-aos="fade-right">
+            <div class="container-img"  id="shop-1-learn"  data-aos="fade-right">
               <div class="text-over text-center  bold-XL white">Meta 1.0</div>
               <img src="Images/shop-01a.png" alt="">
             </div>
           </div>
 
           <div class="col-sm">
-            <div class="container-img" data-aos="fade-left">
+            <div class="container-img"  id="shop-2-learn"  data-aos="fade-left">
               <div class="text-over text-center bold-XL white">Meta 1.2</div>
               <img src="Images/shop-01b.png" alt=""   >
             </div>
           </div>
 
           <div class="col-sm">
-            <div class="container-img" data-aos="fade-left">
+            <div class="container-img"  id="shop-3-learn"  data-aos="fade-left">
               <div class="text-over text-center bold-XL white">Meta 2.0</div>
               <img src="Images/shop-01c.png" alt=""   >
             </div>
@@ -108,6 +108,16 @@
 
         </div>
       </div>
+
+          <!-- Pop-Up -->
+    <div class="pop-up-window-shop" id="pop-up-window">
+      <div class="close-btn" id="close-btn-id">X</div>
+        <div class="container pop-up-msg" id="pop-up-shop">
+          <!-- Details will be injected here -->
+        </div>
+      
+      </div>
+    </div>
 </section>
 <!-- ---------- Section-Vision 2 ---------- -->
 <section class="shop-section-1"  data-aos="fade">

@@ -1,3 +1,5 @@
+import { indexPopUp } from "./popUp-texts.js";
+
 // Typeing Effect
 let i = 0;
 let text = "Meta's closed-loop business logic: mateone users are both consumers and bookkeepers, plus the consensus person who provides liquidity for the token meta, and the home edge station that is the edge computing power provider.";
@@ -42,6 +44,38 @@ const changeVolume = () => {
     }
 }
 buttonVolume.addEventListener("click", changeVolume);
+
+// ----- Pop-up Handler -----
+
+const popUpWindow = document.getElementById("pop-up-window");
+const closeBtn = document.getElementById("close-btn-id");
+const vision_Text = document.getElementById("pop-up-vision");
+
+const vision_1_Button = document.getElementById("vision-1-learn");
+const vision_2_Button = document.getElementById("vision-2-learn");
+
+
+vision_1_Button.myParam = indexPopUp.vision_1;
+vision_2_Button.myParam = indexPopUp.vision_2;
+
+
+const showPopUp = (event) => {
+    if (vision_Text != 0) {
+        let popUpText = event.currentTarget.myParam;
+        vision_Text.innerHTML = popUpText.join("");
+        vision_Text.style.display = "flex";
+        popUpWindow.style.display = "flex";
+    } 
+}
+const closePopUp = () => {
+    popUpWindow.style.display = "none";
+    vision_Text.style.display = "none";
+}
+
+closeBtn.addEventListener("click", closePopUp)
+vision_1_Button.addEventListener("click", showPopUp, false)
+vision_2_Button.addEventListener("click", showPopUp, false)
+
 
 
 

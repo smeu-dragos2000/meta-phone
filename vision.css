@@ -85,6 +85,10 @@
     height: 100%;
 }
 
+#pop-up-vision {
+    text-align: start;
+}
+
 
 @media screen and (max-width: 991px) {
     .vision-section-2,
