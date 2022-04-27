@@ -219,8 +219,7 @@ footer {
 
 
 /* Pop-UP */
-.pop-up-window,
-.pop-up-msg {
+.pop-up-window {
     position: fixed;
     left: 0;
     top: 0;
@@ -228,23 +227,32 @@ footer {
     height: 100%;
     background-color: rgb(255, 255, 255);
     color: #22C3EE;
-    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     z-index: 100;
     display: flex;
-    text-align: center;
-    flex-direction: column;
+    
+    
     justify-content: center;
     align-items: center;
-    overflow: scroll;
+    overflow: auto;
     line-height: 1.4rem;
     display: none;
 }
+.pop-up-msg {
+    text-align: center;
+    font-size: 1.2rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .close-btn {
-    position: absolute;
+    position: fixed;
     top: 1rem;
     right: 1rem;
     padding: 0.5rem 0.8rem;
     border: 1px solid gray;
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 5px;
     font-size: 1.6rem;
     font-weight: 700;

@@ -44,36 +44,33 @@ const changeVolume = () => {
 }
 buttonVolume.addEventListener("click", changeVolume);
 
-// Pop-up Handler
+// ----- Pop-up Handler -----
 
-
-const popUpWwindow = document.getElementById("pop-up-window");
+const popUpWindow = document.getElementById("pop-up-window");
 const closeBtn = document.getElementById("close-btn-id");
 
 const meta1_0_Text = document.getElementById("pop-up-meta1.0");
 const meta1_0_Button = document.getElementById("meta-1.0-Learn");
 const meta1_2_Button = document.getElementById("meta-1.2-Learn");
+const meta2_0_Button = document.getElementById("meta-2.0-Learn");
 
 meta1_0_Button.myParam = indexPopUp.meta1_0;
 meta1_2_Button.myParam = indexPopUp.meta1_2;
-
+meta2_0_Button.myParam = indexPopUp.meta2_0;
 
 const showPopUp = (event) => {
     if (meta1_0_Text != 0) {
         let popUpText = event.currentTarget.myParam;
         meta1_0_Text.innerHTML = popUpText.join("");
         meta1_0_Text.style.display = "flex";
-        popUpWwindow.style.display = "flex";
-        console.log(popUpText);
+        popUpWindow.style.display = "flex";
     } 
 }
 const closePopUp = () => {
-    popUpWwindow.style.display = "none";
+    popUpWindow.style.display = "none";
 }
-
-
-
 
 closeBtn.addEventListener("click", closePopUp)
 meta1_0_Button.addEventListener("click", showPopUp, false)
 meta1_2_Button.addEventListener("click", showPopUp, false)
+meta2_0_Button.addEventListener("click", showPopUp, false)
