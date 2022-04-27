@@ -1,0 +1,12 @@
+.preOrder-section-1 {
+    height: fit-content;
+    align-items: center;
+}
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+select {
+    width: 100%;
+}
