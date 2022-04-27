@@ -15,15 +15,15 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-32x32.png">
-    <script defer src="app.js"></script>
-    <title>Meta Phone</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+    <script defer type="module" src="index.js"></script>
+    <title>MetaSwap</title>
 </head>
 
 <body>
   <!-- Header -->
   <header>
-      <nav class="navbar navbar-expand-lg navbar-light my-navbar  fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light my-navbar">
         <div class="container ">
           <!-- Logo -->
           <a class="navbar-brand me-5" id="logo" href="index.html">
@@ -61,10 +61,10 @@
 
             <ul class="navbar-nav me-0">
               <li class="nav-item ps-3" data-toggle="collapse" data-target=".navbar-collapse.show">
-                <a class="nav-link" href="technology.html">Shop</a>
+                <a class="nav-link" href="shop.html">Shop</a>
               </li>
               <li class="nav-item ps-3" data-toggle="collapse" data-target=".navbar-collapse.show">
-                <a class="nav-link" href="technology.html">Account</a>
+                <a class="nav-link" href="account.html">Account</a>
               </li>
             </ul>
 
@@ -84,9 +84,9 @@
             <source src="Videos/Video-index.webm" type='video/webm'>
           </video>
 
-          <div id="mute-button">
-            <img  id="volume-Off" src="Images/Volume-Off.png" alt="" data-aos="fade" data-aos-delay="600">
-            <img id="volume-On" src="Images/Volume-On.png" alt=""  data-aos="fade" data-aos-delay="600">
+          <div id="mute-button"  data-aos-delay="500">
+            <img  id="volume-Off" src="Images/Volume-Off.png" alt="" data-aos="fade" data-aos-delay="500">
+            <img id="volume-On" src="Images/Volume-On.png" alt=""  data-aos="fade">
           </div>
         </div>
         <!-- Typing Effect -->
@@ -104,7 +104,7 @@
     <div class="container pt-5 pb-5 h-100">
       <div class="row h-100">
         <div class="col-lg-6 d-flex-col justify-content-center">
-          <h1 class="text-XXL bold-XL meta-blue m-0 p-0" data-aos="fade-right">Meta phone</h1>
+          <h1 class="text-XXL bold-XL meta-blue m-0 p-0" data-aos="fade-right">Meta-phone</h1>
             <h2 class="bold-X" data-aos="fade-right"  data-aos-delay="100">The first SaaS cloud smartphone</h2>
             <ul class="text-M bold meta-blue">
               <li data-aos="fade-right" >Data Management</li>
@@ -113,7 +113,7 @@
               <li data-aos="fade-right" >Meta coins</li>
             </ul>
             <div class="btn-container" data-aos="fade-right">
-              <button class="button-blue" id="section2-preOrder"  >Pre-order</button>
+              <button id="section2-preOrder">Pre-order</button>
             </div>
         </div>
       </div>
@@ -123,13 +123,13 @@
 <section class="section-3" id="meta-1.0"  data-aos="fade"  data-aos-offset="200">
   <div class="container pt-5 pb-5 h-100 d-flex-col justify-content-between">
     <div class="row mt-2">
-      <h1 class="text-center text-XL bold-X"  data-aos="fade-up"  data-aos-delay="200">Meta 1.0</h1>
+      <h1 class="text-center text-XL bold-X meta-blue"  data-aos="fade-up"  data-aos-delay="200">Meta 1.0</h1>
     </div>
     <div class="row d-flex justify-content-around">
         <button class=" mt-2 mb-2"  data-aos="fade-right">Pre-order</button>
-        <button class=" mt-2 mb-2"  data-aos="fade-left">Learn More</button>
+        <button class=" mt-2 mb-2" id="meta-1.0-Learn"  data-aos="fade-left">Learn More</button>
     </div>
-  </div>
+
 </section>
 <!-- ---------- Section 4 ---------- -->
 <section class="section-4"  id="meta-1.2"  data-aos="fade">
@@ -139,7 +139,7 @@
     </div>
     <div class="row mb-2 d-flex justify-content-around">
         <button class="button-brown mb-2"  data-aos="fade-right">Pre-order</button>
-        <button class="button-brown-full mb-2"  data-aos="fade-left">Learn More</button>
+        <button class="button-brown-full mb-2" id="meta-1.2-Learn" data-aos="fade-left">Learn More</button>
     </div>
   </div>
 </section>
@@ -174,10 +174,10 @@
       </div>
     </div>
 
-    <div class="row d-flex justify-content-around">
+    <!-- <div class="row d-flex justify-content-around">
       <button class="button-blue mb-3"  data-aos="fade-right">Free Trial</button>
       <button class="button-blue-full mb-3"  data-aos="fade-left">Log-in</button>
-    </div>
+    </div> -->
       <!--  Table  -->
     <div class="row">
 
@@ -187,24 +187,24 @@
         </div>
         <div class="col-md-4"  data-aos="fade-right"  data-aos-delay="200">
           <h2 class="bold text-center">Storage</h2>
-          <p>Showcase your content in a beautiful on-demand video catalog.</p>
+          <p>Powerful and secure cloud storage up to 2 Terabytes. Access your files from your phone or virtual phone. Instant and seamless transfer of all your applications on the cloud.</p>
         </div>
         <div class="col-md-4"  data-aos="fade-right"  data-aos-delay="400">
           <h2 class="bold text-center">Speed</h2>
-          <p>Schedule events in advance & build excitement with a countdown overlay.</p>
+          <p>Seamless collection and integration of your data and high speed analysis process. Update data, alter processes and do your own analysis of results with our integrated data management solution.</p>
         </div>
       
         <div class="col-md-4"  data-aos="fade-right">
           <h2 class="bold text-center">Content Creation</h2>
-          <p>Offer subscriptions or one-time purchases. Accept credit cards & PayPal.</p>
+          <p>Our data management platform can turn any image or collection of images and videos into video content for social media or other intended purposes.</p>
         </div>
         <div class="col-md-4"  data-aos="fade-right"  data-aos-delay="200">
           <h2 class="bold text-center">Crypto Mining</h2>
-          <p>Know what your audience likes & how your content is performing.</p>
+          <p>Sell or buy computing power and support the digital ledger technology revolution. You will get periodic mining outputs to your designated wallet.</p>
         </div>
         <div class="col-md-4"  data-aos="fade-right"  data-aos-delay="400">
           <h2 class="bold text-center">Advertising and Marketing</h2>
-          <p>Get organized on all devices.</p>
+          <p>Customers can now rethink the data platforms, data sharing, advertising platforms, advertising intelligence, and customer experience through our unique cloud capabilities and partner opportunities.</p>
         </div>
 
     </div>
@@ -263,7 +263,7 @@
   <div class="container pt-5 pb-5">
     <div class="row">
       <div class="col-md-8 d-flex-col justify-content-around">
-        <h1 class="text-XL bold-X white"  data-aos="fade-right">Join our ecosystem/ Mine coins on the go, Join the digital revolution</h1>
+        <h1 class="text-XL bold-X white"  data-aos="fade-right">No need to upgrade hardware, just upgrade through the cloud, you can continue to maintain the advantage and become a timeless mobile phone</h1>
         <h2 class="bold-X"  data-aos="fade-right" data-aos-delay="200">The first neo-smartphone</h2>
       </div>
       <div class="col-md-4 mb-5">
@@ -289,7 +289,7 @@
               <a class="navbar-brand mb-5" id="logo" href="index.html">
                 <img src="Images/Logo.png" alt="">
               </a>
-              <h6 class="mb-5">Streaming and Video platform</h6>
+              <h6 class="mb-5">MetaSwap Social</h6>
               <div class="row d-flex">
                 <a class="col social-media" href="https://www.instagram.com/">
                   <img src="Images/Social-instagram.png" alt="">
@@ -301,9 +301,9 @@
             </div>
             <div class="col mb-3 d-flex-col align-items-center">
               <h5 class="mb-5">Contact info</h5>
-              <p class="mb-4">2715 Ash Dr. San Jose, South Dakota 83475</p>
+              <p class="mb-4">Kings Hedges Rd, Cambridge CB4 2HY</p>
               <p class="mb-4">(219) 555-0114</p>
-              <p class="">info@screeno.com</p>
+              <p class="">info@metaswap.name</p>
             </div>
           </div>
           
@@ -337,7 +337,17 @@
 
 </footer>
 
-<div class="scroll-to-top"  onclick="window.scrollTo(0, 0);">Top</div>
+      <!-- Pop-Up -->
+      <div class="pop-up-window" id="pop-up-window">
+        <div class="close-btn" id="close-btn-id">X</div>
+        <div class="pop-up-msg" id="pop-up-meta1.0">
+          <!-- Details will be injected here -->
+        </div>
+        
+      </div>
+    </div>
+
+<div class="scroll-to-top"  onclick="window.scrollTo(0, 0);"><img src="images/Arrow-up.png" alt=""></div>
 
 
 

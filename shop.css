@@ -1,0 +1,37 @@
+.shop-section-1 {
+    background-color: #F6F9FD;
+
+}
+
+.shop-section-1 img {
+    cursor: pointer;
+}
+
+.text-over {
+    position: absolute;
+    font-size: 2.5rem;
+    z-index: 5;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+}
+
+
+.join-list {
+    width: max-content !important;
+}
+.join-list::before,
+.join-list:hover::before{
+    margin-right: 30px;
+}
+
+
+
+
+
+@media screen and (max-width: 991px) {
+    .shop-section-1 {
+        height: fit-content;
+    }
+ 
+}

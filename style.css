@@ -29,6 +29,7 @@ html {
 }
 
 body {
+    position: relative;
     height: 100%;
 }
 
@@ -39,11 +40,10 @@ img {
 }
 
 #typing-effect-square {
-    height: 2rem;
+    height: 1.8rem;
     width: 4rem;
     margin-left: -3rem;
 }
-
 
 
 /* Buttons */
@@ -59,6 +59,7 @@ button {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transition: all 10ms;
 }
 button::before {
     content: url(Images/Arrow-black.png);
@@ -82,7 +83,7 @@ button:hover {
 
 /* --- Colors --- */
 .meta-blue {
-    color: #56CCF2;
+    color: #22C3EE;
 }
 
 .meta-pink {
@@ -136,8 +137,6 @@ header {
     font-size: 1.2rem;
     font-weight: 600;
     z-index: 10;
-    border: 1px solid pink;
-
 }
 .my-navbar {
     padding-top: 0;
@@ -219,6 +218,39 @@ footer {
 }
 
 
+/* Pop-UP */
+.pop-up-window,
+.pop-up-msg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    color: #22C3EE;
+    font-size: 1.2rem;
+    z-index: 100;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    line-height: 1.4rem;
+    display: none;
+}
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 107;
+}
 
 
 
@@ -291,12 +323,13 @@ video {
 .scroll-to-top {
     width: 60px !important;
     height: 50px;
+    padding: 0.4rem;
     position: fixed;
-    border: 1px solid rgba(128, 128, 128, 0.493);
+    border: 1px solid rgba(128, 128, 128, 0.4);
     border-radius: 5px;
     bottom: 10px;
     right: 10px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -304,6 +337,12 @@ video {
 }
 .scroll-to-top::before {
     content: "";
+}
+.scroll-to-top img {
+    opacity: 0.9;
+}
+.scroll-to-top img:hover {
+    opacity: 1;
 }
 
 

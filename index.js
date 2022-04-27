@@ -1,3 +1,5 @@
+import { indexPopUp } from "./popUp-texts.js";
+
 // Typeing Effect
 let i = 0;
 let text = "MetaPhone is accelerating the world's transition to software driven cities with cloud phones, data management and performance SaaS integrated platform.";
@@ -10,7 +12,7 @@ const typedEffect = () => {
         homePage1.innerHTML += text.charAt(i);
         i++;
         typingEffectSquare.style.display = "inline";
-        setTimeout(typedEffect, 12);
+        setTimeout(typedEffect, 18);
     }
     else {
         typingEffectSquare.style.display = "none";
@@ -42,6 +44,36 @@ const changeVolume = () => {
 }
 buttonVolume.addEventListener("click", changeVolume);
 
-// Scroll to top button
+// Pop-up Handler
 
 
+const popUpWwindow = document.getElementById("pop-up-window");
+const closeBtn = document.getElementById("close-btn-id");
+
+const meta1_0_Text = document.getElementById("pop-up-meta1.0");
+const meta1_0_Button = document.getElementById("meta-1.0-Learn");
+const meta1_2_Button = document.getElementById("meta-1.2-Learn");
+
+meta1_0_Button.myParam = indexPopUp.meta1_0;
+meta1_2_Button.myParam = indexPopUp.meta1_2;
+
+
+const showPopUp = (event) => {
+    if (meta1_0_Text != 0) {
+        let popUpText = event.currentTarget.myParam;
+        meta1_0_Text.innerHTML = popUpText.join("");
+        meta1_0_Text.style.display = "flex";
+        popUpWwindow.style.display = "flex";
+        console.log(popUpText);
+    } 
+}
+const closePopUp = () => {
+    popUpWwindow.style.display = "none";
+}
+
+
+
+
+closeBtn.addEventListener("click", closePopUp)
+meta1_0_Button.addEventListener("click", showPopUp, false)
+meta1_2_Button.addEventListener("click", showPopUp, false)

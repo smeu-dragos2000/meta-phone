@@ -1,0 +1,18 @@
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+button a {
+    text-decoration: none;
+    color: black;
+    
+}
+button:hover a {
+    color: #22C3EE;
+}

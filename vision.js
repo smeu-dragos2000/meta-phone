@@ -12,7 +12,7 @@ const typedEffect = () => {
         homePage1.innerHTML += text.charAt(i);
         i++;
         typingEffectSquare.style.display = "inline";
-        setTimeout(typedEffect, 12);
+        setTimeout(typedEffect, 18);
     }
     else {
         typingEffectSquare.style.display = "none";
@@ -63,3 +63,6 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+
+
