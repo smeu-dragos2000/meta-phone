@@ -1,7 +1,7 @@
 <?php 
 if(isset($_POST['submit'])){
-    $to = "smeu.dragos1982@gmail.com"; // this is your Email address
-    $from = $_POST['smeu.dragos1982@gmail.com']; // this is the sender's Email address
+    $to = "info@metaswap.name"; // this is your Email address
+    $from = $_POST['info@metaswap.name']; // this is the sender's Email address
     $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];
@@ -13,7 +13,6 @@ if(isset($_POST['submit'])){
 
     mail($to,$subject,$message);
 
-    // echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
     header("Location: /thankYou.html");
     // You can also use header('Location: thank_you.php'); to redirect to another page.
     // You cannot use header and echo together. It's one or the other.
