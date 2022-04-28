@@ -40,29 +40,22 @@
 
 
 
-
 .section-2 ul {
     list-style-image: url('Images/UL-bullet.png');
 }
 
-
-
-/* .column-services {
-    background-color: #F5D2EE;
-} */
+.container-img {
+    cursor: pointer;
+}
 
 .column-services img {
     width: 100%;
-    /* min-height: min-content;
-    max-height: max-content; */
     object-fit: cover;
-    /* margin: auto; */
 }
 
 #typing-effect {
     min-height: 300px;
 }
-
 
 
 @media screen and (max-width: 991px) {

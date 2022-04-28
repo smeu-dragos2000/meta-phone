@@ -55,7 +55,15 @@ export const indexPopUp = {
         "<p> Blockchain wallet, not only a mobile phone, but also a hardware wallet; </p>",
         "<p> Support 3G/4G/5G, dual card dual standby, high picture pixel </p>"
     ],
-
+    meta_service1 : [
+        "<p> Powerful and secure cloud storage up to 2 Terabytes. Access your files from your phone or virtual phone. Instant and seamless transfer of all your applications on the cloud. No need to upgrade hardware, just upgrade through the cloud, you can continue to maintain the advantage and become a timeless mobile phone; Because the cloud phone runs in the cloud, all resources are in the cloud. Our client only plays a role of control and supervision, and will not occupy local resources. Cloud-based data does not need to be transmitted locally. Combined with various security services such as Anti-DDoS traffic cleaning and situational awareness, enterprise-level cloud security protection is realized, giving your information an extra layer of professional-level protection. </p>",
+    ],
+    meta_service2 : [
+        "<p> Seamless collection and integration of your data and high speed analysis process. Update data, alter processes and do your own analysis of results with our integrated data management solution. Meta one cloud mobile phone service can transfer all applications on the mobile phone to the cloud, and the computing and storage capabilities originally required by the mobile terminal are all provided by the cloud server; Relying on clustered deployment, it can seamlessly connect to a variety of public cloud services, support second-level user data mounting and data persistence, and better meet user applications. </p>",
+    ],
+    meta_service3 : [
+        "<p> Metaphone smartphone, as a metachain node, holds a block ledger, which can store, verify and synchronize the generation, scheduling, transaction and consumption behaviour of the shared computing power of the CNMETA computing power network, so as to obtain records. Account and verification rewards. This process we call mining. It provides tokens with a total circulation of 2 billion pieces, and the output in the first year is 240 million pieces, that is, 20 million pieces per month, and the output is reduced by 20% year by year, and it will be produced in about 50 years.Blockchain mobile phone, each mobile phone is a node, using a special chip to realize the accounting function; Blockchain wallet, not only a mobile phone, but also a hardware wallet; </p>",
+    ],
     // Tehnology
     tech_1 : [
         "<p> Meta one cloud mobile phone service can transfer all applications on the mobile phone to the cloud, and the computing and storage capabilities originally required by the mobile terminal are all provided by the cloud server; </p>",

@@ -53,10 +53,16 @@ const meta1_0_Text = document.getElementById("pop-up-meta1.0");
 const meta1_0_Button = document.getElementById("meta-1.0-Learn");
 const meta1_2_Button = document.getElementById("meta-1.2-Learn");
 const meta2_0_Button = document.getElementById("meta-2.0-Learn");
+const meta_service1 = document.getElementById("meta-service-1");
+const meta_service2 = document.getElementById("meta-service-2");
+const meta_service3 = document.getElementById("meta-service-3");
 
 meta1_0_Button.myParam = indexPopUp.meta1_0;
 meta1_2_Button.myParam = indexPopUp.meta1_2;
 meta2_0_Button.myParam = indexPopUp.meta2_0;
+meta_service1.myParam = indexPopUp.meta_service1;
+meta_service2.myParam = indexPopUp.meta_service2;
+meta_service3.myParam = indexPopUp.meta_service3;
 
 const showPopUp = (event) => {
     if (meta1_0_Text != 0) {
@@ -74,3 +80,7 @@ closeBtn.addEventListener("click", closePopUp)
 meta1_0_Button.addEventListener("click", showPopUp, false)
 meta1_2_Button.addEventListener("click", showPopUp, false)
 meta2_0_Button.addEventListener("click", showPopUp, false)
+meta_service1.addEventListener("click", showPopUp, false)
+meta_service2.addEventListener("click", showPopUp, false)
+meta_service3.addEventListener("click", showPopUp, false)
+
